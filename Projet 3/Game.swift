@@ -1,5 +1,5 @@
 //
-//  main.swift
+//  Game.swift
 //  Projet 3
 //
 //  Created by Michael Favre on 02/02/2018.
@@ -7,6 +7,3 @@
 //
 
 import Foundation
-
-
-
