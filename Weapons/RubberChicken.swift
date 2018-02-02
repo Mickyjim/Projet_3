@@ -8,6 +8,11 @@
 
 import Foundation
 
-class RubberChicken {
+// An excellent weapon to Bitch Slap any adversary!
+
+class RubberChicken: Weapons {
+    init() {
+        super.init(name: "Rubber Chicken", damage: 20, defense: 100)
+    }
     
 }

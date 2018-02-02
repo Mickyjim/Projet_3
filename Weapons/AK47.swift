@@ -10,6 +10,9 @@ import Foundation
 
 // Atchoum's favorite weapon
 
-class AK47 {
+class AK47: Weapons {
+    init() {
+        super.init(name: "AK 47", damage: 75, defense: 5)
+    }
     
 }

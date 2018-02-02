@@ -10,7 +10,10 @@ import Foundation
 
 // The healer who is always high!
 
-class Wizard {
+class Wizard: Heroes {
     
-    
+    //MARK: -  init
+    init(name: String) {
+        super.init(name: name, energy: 300, weapon: Hansaplast())
+    }
 }

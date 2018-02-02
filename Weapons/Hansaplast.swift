@@ -10,6 +10,8 @@ import Foundation
 
 // Every want to be wizard needs one
 
-class Hansaplast {
-    
+class Hansaplast: Weapons {
+    init() {
+        super.init(name: "Hansaplast", damage: 50, defense: 30)
+    }
 }
