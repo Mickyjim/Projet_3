@@ -1,5 +1,5 @@
 //
-//  main.swift
+//  RubberChicken.swift
 //  Projet 3
 //
 //  Created by Michael Favre on 02/02/2018.
@@ -8,8 +8,6 @@
 
 import Foundation
 
-let game = Game()
-game.start()
-
-
-
+class RubberChicken {
+    
+}

@@ -1,5 +1,5 @@
 //
-//  main.swift
+//  Hansaplast.swift
 //  Projet 3
 //
 //  Created by Michael Favre on 02/02/2018.
@@ -8,8 +8,8 @@
 
 import Foundation
 
-let game = Game()
-game.start()
+// Every want to be wizard needs one
 
-
-
+class Hansaplast {
+    
+}

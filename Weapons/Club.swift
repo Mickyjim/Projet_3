@@ -1,5 +1,5 @@
 //
-//  Game.swift
+//  Club.swift
 //  Projet 3
 //
 //  Created by Michael Favre on 02/02/2018.
@@ -8,13 +8,10 @@
 
 import Foundation
 
+// The perfect weapon for a messy outcome!
 
-class Game {
-    
-    var teams = [Team]()
-    
-    func start() {
-        
+class Club: Weapons {
+    init() {
+        super.init(name: "Club", damage: 10, defense: 5)
     }
-    
 }
