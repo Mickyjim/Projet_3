@@ -15,7 +15,6 @@ class Heroes {
     var energy: Int
     var weapon: Weapons
     
-    
     //MARK: - Init
     init(name: String, energy: Int, weapon: Weapons) {
         self.name = name
@@ -25,6 +24,12 @@ class Heroes {
     
     //MARK: - Methods
     func describe() {
-        print(name + " - ❤️ \(energy) ")
+        print(name + " - ❤️ \(energy)" + " " +  weapon.name + " " + " - ⚔️ \(weapon.damage)")
     }
+
+    func attack(target: Heroes) {
+        target.energy -= weapon.damage
+    }
+
 }
+

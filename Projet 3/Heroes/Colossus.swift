@@ -14,6 +14,6 @@ class Colossus: Heroes {
     
     //MARK: -  init
     init(name: String) {
-        super.init(name: name, energy: 700, weapon: RubberChicken())
+        super.init(name: name, energy: 150, weapon: RubberChicken())
     }
 }

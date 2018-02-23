@@ -1,5 +1,5 @@
 //
-//  Hansaplast.swift
+//  Axe.swift
 //  Projet 3
 //
 //  Created by Michael Favre on 02/02/2018.
@@ -8,10 +8,11 @@
 
 import Foundation
 
-// Every want to be wizard needs one
+// Atchoum's favorite weapon
 
-class Hansaplast: Weapons {
+class Axe: Weapons {
     init() {
-        super.init(name: "Hansaplast", damage: 50, defense: 30)
+        super.init(name: "Axe", damage: 40, heal: 0)
     }
+    
 }

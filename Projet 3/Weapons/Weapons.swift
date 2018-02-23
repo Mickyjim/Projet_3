@@ -15,19 +15,19 @@ class Weapons {
     //MARK: - Vars
     let name: String
     let damage: Int
-    let defense: Int
+    let heal: Int
     
     
     //MARK: - Init
-    init(name: String, damage: Int, defense: Int) {
+    init(name: String, damage: Int, heal: Int) {
         self.name = name
         self.damage = damage
-        self.defense = defense
+        self.heal = heal
         
     }
     
     //MARK: - Methods
     func describe() {
-        print(name + " - ⚔️ \(damage) - 🛡 \(defense) ")
+        print(name + " - ⚔️ \(damage) - 🏥 \(heal)")
     }
 }

@@ -14,6 +14,6 @@ class Dwarf: Heroes {
     
     //MARK: -  init
     init(name: String) {
-        super.init(name: name, energy: 75, weapon: AK47())
+        super.init(name: name, energy: 75, weapon: Axe())
     }
 }

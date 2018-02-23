@@ -1,5 +1,5 @@
 //
-//  AK47.swift
+//  Club.swift
 //  Projet 3
 //
 //  Created by Michael Favre on 02/02/2018.
@@ -8,11 +8,10 @@
 
 import Foundation
 
-// Atchoum's favorite weapon
+// The perfect weapon for a messy outcome!
 
-class AK47: Weapons {
+class Club: Weapons {
     init() {
-        super.init(name: "AK 47", damage: 75, defense: 5)
+        super.init(name: "Club", damage: 30, heal: 0)
     }
-    
 }

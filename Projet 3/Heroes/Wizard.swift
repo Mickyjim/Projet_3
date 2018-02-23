@@ -14,6 +14,14 @@ class Wizard: Heroes {
     
     //MARK: -  init
     init(name: String) {
-        super.init(name: name, energy: 300, weapon: Hansaplast())
+        super.init(name: name, energy: 125, weapon: Hansaplast())
+    }
+    
+    override func attack(target: Heroes) {
+        print("I hate violence!")
+    }
+
+    func heal(target: Heroes) {
+        target.energy += weapon.heal
     }
 }

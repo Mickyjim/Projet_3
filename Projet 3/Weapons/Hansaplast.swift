@@ -1,5 +1,5 @@
 //
-//  Club.swift
+//  Hansaplast.swift
 //  Projet 3
 //
 //  Created by Michael Favre on 02/02/2018.
@@ -8,10 +8,10 @@
 
 import Foundation
 
-// The perfect weapon for a messy outcome!
+// Every want to be wizard needs one
 
-class Club: Weapons {
+class Hansaplast: Weapons {
     init() {
-        super.init(name: "Club", damage: 40, defense: 20)
+        super.init(name: "Hansaplast", damage: 0, heal: 10)
     }
 }
