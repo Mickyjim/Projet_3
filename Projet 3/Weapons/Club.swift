@@ -12,6 +12,6 @@ import Foundation
 
 class Club: Weapons {
     init() {
-        super.init(name: "Club", damage: 30, heal: 0)
+        super.init(name: "Club", damage: 40, heal: 0)
     }
 }

@@ -1,4 +1,4 @@
-//
+ //
 //  Tools.swift
 //  Projet 3
 //
@@ -10,18 +10,16 @@ import Foundation
 
 // Toolbox
 
-class Tools {
+ class Tools {
     
     static func inputInt() -> Int {
         guard let input = readLine() else { return 0 }
         guard let number = Int(input) else { return 0 }
         return number
-        
     }
     
     static func inputString() -> String {
         guard let input = readLine() else { return "" }
         return input
-        
     }
-}
+ }

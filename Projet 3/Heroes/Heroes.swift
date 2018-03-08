@@ -23,13 +23,17 @@ class Heroes {
     }
     
     //MARK: - Methods
-    func describe() {
-        print(name + " - ❤️ \(energy)" + " " +  weapon.name + " " + " - ⚔️ \(weapon.damage)")
+    func describe(index: Int) {
+        print("\(index+1) - " + name + " - ❤️ \(energy)" + " " +  weapon.name + " " + " - ⚔️ \(weapon.damage)")
     }
-
+    
+    //MARK: - Methods - Damage inflicting and lost of energy
     func attack(target: Heroes) {
         target.energy -= weapon.damage
+        if target.energy <= 0 {
+            target.energy = 0
+        }
     }
-
 }
+
 

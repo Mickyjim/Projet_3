@@ -12,7 +12,6 @@ import Foundation
 
 class RubberChicken: Weapons {
     init() {
-        super.init(name: "Rubber Chicken", damage: 10, heal: 0)
+        super.init(name: "Rubber Chicken", damage: 30, heal: 0)
     }
-    
 }

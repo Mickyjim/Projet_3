@@ -17,13 +17,11 @@ class Weapons {
     let damage: Int
     let heal: Int
     
-    
     //MARK: - Init
     init(name: String, damage: Int, heal: Int) {
         self.name = name
         self.damage = damage
         self.heal = heal
-        
     }
     
     //MARK: - Methods

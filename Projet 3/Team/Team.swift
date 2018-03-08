@@ -9,72 +9,80 @@
 import Foundation
 
 // Team creation
-
 class Team {
     var heroes = [Heroes]()
+    var uniqueHeroNames = [String]()
+    
+    func uniqueHeroName() -> String {
+        var heroName = ""
+        
+        repeat {
+            heroName = Tools.inputString()
+            if uniqueHeroNames.contains(heroName) {
+                print("That hero's name has already been used! Enter a new name")
+                heroName = ""
+            }
+            uniqueHeroNames.append(heroName)
+            
+        } while heroName == ""
+        
+        return heroName
+    }
     
     func createHeroes() {
-       
+        
         for _ in 0..<3 {
-           
+            
             print("")
             print("==========================")
-            print("1 - The Warrior: The handsome bloke 🕺🏻")
+            print("1 - The Warrior: The handsome bloke 🤺")
             print("2 - The Wizard: The healer who is always high 🧙🏻‍♂️")
-            print("3 - The Dwarf: The feisty midget in town ☠️")
+            print("3 - The Dwarf: The feisty midget in town 💀")
             print("4 - The Colossus: The big dumb brute who loves picking daffodils 🌼")
             print("=========================")
             
             //MARK: Variables
-            var userName = ""
             var userChoice = 0
             
             // User's choice of hero
-            
             repeat {
                 userChoice = Tools.inputInt()
                 
             } while userChoice != 1 && userChoice != 2 && userChoice != 3 && userChoice != 4
             
             // User's choice of hero name
-            
             print("Enter your hero's name")
-            
-            repeat {
-                userName = Tools.inputString()
-                
-            } while userName == ""
             
             switch userChoice {
             case 1:
-                let warrior = Warrior(name: userName)
+                let warrior = Warrior(name: uniqueHeroName())
                 heroes.append(warrior)
             case 2:
-                let wizard = Wizard(name: userName)
+                let wizard = Wizard(name: uniqueHeroName())
                 heroes.append(wizard)
             case 3:
-                let dwarf = Dwarf(name: userName)
+                let dwarf = Dwarf(name: uniqueHeroName())
                 heroes.append(dwarf)
             case 4:
-                let colossus = Colossus(name: userName)
+                let colossus = Colossus(name: uniqueHeroName())
                 heroes.append(colossus)
             default:
                 break
             }
         }
-        
     }
-
+    // Team description
     func teamDescription() {
-            // Parcourir tableau "Heroes"
-            // Appeler la fonction "describe" de chacun des héros
-            // Utiliser une boucle "for" pour parcourir le tableau
+        // Go through the array "Heroes"
+        // Call the function "describe" of each hero
+        // Use a "for" loop to view the array
         
-        for hero in heroes {
-            hero.describe()
+        for i in 0..<heroes.count {
+            let hero = heroes[i]
+            hero.describe(index: i)
         }
     }
-    
+    // A hero is dead! ⛪️
     func isDead() -> Bool {
         var isDead = false
         for hero in heroes {
@@ -84,8 +92,8 @@ class Team {
                 return false
             }
         }
+        print("Your heroes \(heroes) are dead! 😖 😵 ⚰️ ☠️  👻 ")
         return isDead
-        
     }
 }
 

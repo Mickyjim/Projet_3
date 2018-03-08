@@ -18,10 +18,14 @@ class Wizard: Heroes {
     }
     
     override func attack(target: Heroes) {
-        print("I hate violence!")
+        print("I'm a lover not a fighter !")
     }
-
+    
     func heal(target: Heroes) {
         target.energy += weapon.heal
+        if target.energy <= 0 {
+            print("What?! You believe you are God?! He's dead!!! FYI it only happened once! And his name was Jesus! 🙄🙄🙄 ")
+        }
     }
 }
+
