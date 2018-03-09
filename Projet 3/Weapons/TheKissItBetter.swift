@@ -8,7 +8,8 @@
 
 import Foundation
 
-// The big Heal
+//The big Heal
+
 class TheKissItBetter: Weapons {
     init() {
         super.init(name: "TheKissItBetter", damage: 0, heal: 80)

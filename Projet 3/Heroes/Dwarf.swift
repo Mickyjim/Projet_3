@@ -10,7 +10,7 @@ import Foundation
 
 // The feisty midget in town
 
-class Dwarf: Heroes {
+class Dwarf: Hero {
     
     //MARK: -  init
     init(name: String) {

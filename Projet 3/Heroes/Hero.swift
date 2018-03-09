@@ -8,29 +8,33 @@
 
 import Foundation
 
-class Heroes {
+class Hero {
     
     //MARK: - Vars
     let name: String
     var energy: Int
     var weapon: Weapons
+    let maxEnergy: Int
     
     //MARK: - Init
     init(name: String, energy: Int, weapon: Weapons) {
         self.name = name
         self.energy = energy
         self.weapon = weapon
+        self.maxEnergy = energy
     }
     
-    //MARK: - Methods
+    //MARK: - Methods - Hero description
     func describe(index: Int) {
         print("\(index+1) - " + name + " - ❤️ \(energy)" + " " +  weapon.name + " " + " - ⚔️ \(weapon.damage)")
     }
     
     //MARK: - Methods - Damage inflicting and lost of energy
-    func attack(target: Heroes) {
+    func attack(target: Hero) {
         target.energy -= weapon.damage
-        if target.energy <= 0 {
+        print(name + " attacked " + target.name + " and inflicting \(weapon.damage) points of damage! 👊🏻💥😵")
+    // Enabling damage limit to avoid going under minimum energy level
+        if target.energy < 0 {
             target.energy = 0
         }
     }

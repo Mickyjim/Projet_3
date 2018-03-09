@@ -41,7 +41,7 @@ class Game {
     }
     
     // The Magic chest feature
-    func magicChest(hero: Heroes) {
+    func magicChest(hero: Hero) {
         let magicChestRandom = arc4random_uniform(5)
         if magicChestRandom == 3 {
             print("Look! A magic chest 🎁! Cool!")
@@ -58,19 +58,32 @@ class Game {
     }
     
     // Chuck Norris appears!
-    func chuckNorris(target: Heroes) {
+    func chuckNorris(target: Hero) {
         let chuckNorris = ChuckNorris(name: "Chuck Norris")
         chuckNorris.attack(target: target)
         print("Your hero has just been BITCH SLAPED by Chuck Norris 👋🏻 💥 💩! That ugly!!! 😧 🤢 🔞")
     }
     
     // MARK: Methods - User's hero choice
-    var userHero = 0
+
     
-    func userHeroChoice() {
+    func userHeroChoice() -> Int {
+        var userHero = 0
         repeat {
             userHero = Tools.inputInt()
         } while userHero != 1 && userHero != 2 && userHero != 3
+        return userHero
+    }
+    
+    func attackPhase(teamIndex: Int, contender: Hero) {
+        teams[teamIndex].teamDescription()
+        
+        // Enabling bonus
+        if arc4random_uniform(5) == 3 {
+            chuckNorris(target: teams[teamIndex].heroes[userHeroChoice() - 1])
+        } else {
+            contender.attack(target: teams[teamIndex].heroes[userHeroChoice() - 1])
+        }
     }
     
     //MARK: - Methods
@@ -88,9 +101,8 @@ class Game {
                 teams[i].teamDescription()
                 
                 //MARK: Hero selection
-                
-                userHeroChoice()
-                let contender = teams[i].heroes[userHero - 1]
+
+                let contender = teams[i].heroes[userHeroChoice() - 1]
                 magicChest(hero: contender)
                 
                 // Verify the characteristics of a hero
@@ -102,50 +114,29 @@ class Game {
                     // If the hero is a wizard, list his team
                     teams[i].teamDescription()
                     
-                    // List the member of his team to heal
-                    userHeroChoice()
                     
                     // Heal the target
-                    wizard.heal(target: teams[i].heroes[userHero-1])
+                    wizard.heal(target: teams[i].heroes[userHeroChoice() - 1])
                     
                 } else {
                     if i == 0 {
                         print("")
-                        print("Team N°\(i+1)")
+                        print("Team N°2")
                         print("")
                         
-                        // If it's a warrior, list the members of the adversary's team
-                        teams[i+1].teamDescription()
-                        
-                        // Select the target to attack
-                        userHeroChoice()
-                        
-                        // Enabling bonus
-                        if arc4random_uniform(5) == 3 {
-                            chuckNorris(target: teams[i+1].heroes[userHero-1])
-                        } else {
-                            contender.attack(target: teams[i+1].heroes[userHero-1])
-                        }
-                        
+                        attackPhase(teamIndex: i+1, contender: contender)
                         // Inflict damage to the target
-                        if teams[i+1].isDead() {
+                        if teams[i+1].isDead(index: 2) {
                             return
                         }
                     } else {
                         print("")
-                        print("Team N°\(i+1)")
+                        print("Team N°1")
                         print("")
+                        
                         // If it's a warrior, list the members of the adversary's team
-                        teams[i-1].teamDescription()
-                        // Select the target to attack
-                        userHeroChoice()
-                        // Inflict damage to the target
-                        if arc4random_uniform(5) == 3 {
-                            chuckNorris(target: teams[i-1].heroes[userHero-1])
-                        } else {
-                            contender.attack(target: teams[i-1].heroes[userHero-1])
-                        }
-                        if teams[i-1].isDead() {
+                        attackPhase(teamIndex: i-1, contender: contender)
+                        if teams[i-1].isDead(index: 1) {
                             return
                         }
                     }

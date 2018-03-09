@@ -10,7 +10,7 @@ import Foundation
 
 // The handsome bloke
 
-class Warrior: Heroes {
+class Warrior: Hero {
     
     //MARK: -  init
     init(name: String) {

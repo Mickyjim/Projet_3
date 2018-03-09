@@ -10,7 +10,7 @@ import Foundation
 
 // Chuck Norris, no further comment needed!
 
-class ChuckNorris: Heroes {
+class ChuckNorris: Hero {
     
     //MARK: -  init
     init(name: String) {

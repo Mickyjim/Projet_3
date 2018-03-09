@@ -24,7 +24,7 @@ class Weapons {
         self.heal = heal
     }
     
-    //MARK: - Methods
+    //MARK: - Methods - Weapon description
     func describe() {
         print(name + " - ⚔️ \(damage) - 🏥 \(heal)")
     }

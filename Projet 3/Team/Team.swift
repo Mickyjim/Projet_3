@@ -10,24 +10,10 @@ import Foundation
 
 // Team creation
 class Team {
-    var heroes = [Heroes]()
-    var uniqueHeroNames = [String]()
+    var heroes = [Hero]()
     
-    func uniqueHeroName() -> String {
-        var heroName = ""
-        
-        repeat {
-            heroName = Tools.inputString()
-            if uniqueHeroNames.contains(heroName) {
-                print("That hero's name has already been used! Enter a new name")
-                heroName = ""
-            }
-            uniqueHeroNames.append(heroName)
-            
-        } while heroName == ""
-        
-        return heroName
-    }
+    
+    
     
     func createHeroes() {
         
@@ -55,16 +41,16 @@ class Team {
             
             switch userChoice {
             case 1:
-                let warrior = Warrior(name: uniqueHeroName())
+                let warrior = Warrior(name: NameCheck.shared.uniqueHeroName())
                 heroes.append(warrior)
             case 2:
-                let wizard = Wizard(name: uniqueHeroName())
+                let wizard = Wizard(name: NameCheck.shared.uniqueHeroName())
                 heroes.append(wizard)
             case 3:
-                let dwarf = Dwarf(name: uniqueHeroName())
+                let dwarf = Dwarf(name: NameCheck.shared.uniqueHeroName())
                 heroes.append(dwarf)
             case 4:
-                let colossus = Colossus(name: uniqueHeroName())
+                let colossus = Colossus(name: NameCheck.shared.uniqueHeroName())
                 heroes.append(colossus)
             default:
                 break
@@ -83,7 +69,7 @@ class Team {
         }
     }
     // A hero is dead! ⛪️
-    func isDead() -> Bool {
+    func isDead(index: Int) -> Bool {
         var isDead = false
         for hero in heroes {
             if hero.energy == 0 {
@@ -92,7 +78,7 @@ class Team {
                 return false
             }
         }
-        print("Your heroes \(heroes) are dead! 😖 😵 ⚰️ ☠️  👻 ")
+        print("Team \(index) all your heroes are dead! 😖 😵 ⚰️ ☠️  👻  ====== GAME OVER!")
         return isDead
     }
 }

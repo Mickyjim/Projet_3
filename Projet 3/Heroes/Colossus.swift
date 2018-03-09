@@ -10,7 +10,7 @@ import Foundation
 
 // The big dumb brute who loves picking daffodils
 
-class Colossus: Heroes {
+class Colossus: Hero {
     
     //MARK: -  init
     init(name: String) {

@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED20CBE22040A941005957C8 /* ChuckNorris.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED20CBE12040A941005957C8 /* ChuckNorris.swift */; };
+		ED20CBE42040A98E005957C8 /* BitchSlap.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED20CBE32040A98E005957C8 /* BitchSlap.swift */; };
 		ED26757D2024DED0005F753D /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED26757C2024DED0005F753D /* main.swift */; };
 		ED2675842024E0B0005F753D /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2675832024E0B0005F753D /* Game.swift */; };
-		ED26758920250FD0005F753D /* Heroes.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED26758820250FD0005F753D /* Heroes.swift */; };
+		ED26758920250FD0005F753D /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED26758820250FD0005F753D /* Hero.swift */; };
 		ED26758B20250FE2005F753D /* Warrior.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED26758A20250FE2005F753D /* Warrior.swift */; };
 		ED26758D20250FF0005F753D /* Wizard.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED26758C20250FF0005F753D /* Wizard.swift */; };
 		ED26758F20251003005F753D /* Dwarf.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED26758E20251003005F753D /* Dwarf.swift */; };
@@ -20,6 +22,9 @@
 		ED26759D2025112E005F753D /* Weapons.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED26759C2025112E005F753D /* Weapons.swift */; };
 		ED26759F20251149005F753D /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED26759E20251149005F753D /* Team.swift */; };
 		ED2675A120252000005F753D /* Axe.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2675A020252000005F753D /* Axe.swift */; };
+		ED319DA52049B61D00CE0821 /* TheKickAss.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED319DA42049B61D00CE0821 /* TheKickAss.swift */; };
+		ED319DA72049B68800CE0821 /* TheKissItBetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED319DA62049B68800CE0821 /* TheKissItBetter.swift */; };
+		ED5051E02052C443001AD544 /* NameCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5051DF2052C443001AD544 /* NameCheck.swift */; };
 		ED5FDB9C202B4E6B0078751F /* Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5FDB9B202B4E6B0078751F /* Tools.swift */; };
 /* End PBXBuildFile section */
 
@@ -36,10 +41,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		ED20CBE12040A941005957C8 /* ChuckNorris.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChuckNorris.swift; sourceTree = "<group>"; };
+		ED20CBE32040A98E005957C8 /* BitchSlap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitchSlap.swift; sourceTree = "<group>"; };
 		ED2675792024DED0005F753D /* Projet 3 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Projet 3"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED26757C2024DED0005F753D /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		ED2675832024E0B0005F753D /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
-		ED26758820250FD0005F753D /* Heroes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heroes.swift; sourceTree = "<group>"; };
+		ED26758820250FD0005F753D /* Hero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hero.swift; sourceTree = "<group>"; };
 		ED26758A20250FE2005F753D /* Warrior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Warrior.swift; sourceTree = "<group>"; };
 		ED26758C20250FF0005F753D /* Wizard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wizard.swift; sourceTree = "<group>"; };
 		ED26758E20251003005F753D /* Dwarf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dwarf.swift; sourceTree = "<group>"; };
@@ -50,6 +57,9 @@
 		ED26759C2025112E005F753D /* Weapons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weapons.swift; sourceTree = "<group>"; };
 		ED26759E20251149005F753D /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
 		ED2675A020252000005F753D /* Axe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Axe.swift; sourceTree = "<group>"; };
+		ED319DA42049B61D00CE0821 /* TheKickAss.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheKickAss.swift; sourceTree = "<group>"; };
+		ED319DA62049B68800CE0821 /* TheKissItBetter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheKissItBetter.swift; sourceTree = "<group>"; };
+		ED5051DF2052C443001AD544 /* NameCheck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameCheck.swift; sourceTree = "<group>"; };
 		ED5FDB9B202B4E6B0078751F /* Tools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tools.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -85,10 +95,10 @@
 			children = (
 				ED26757C2024DED0005F753D /* main.swift */,
 				ED2675832024E0B0005F753D /* Game.swift */,
-				ED5FDB9A202B4E500078751F /* Tools */,
-				ED26758720250FB9005F753D /* Team */,
-				ED26758620250F8B005F753D /* Weapons */,
 				ED26758520250F74005F753D /* Heroes */,
+				ED26758620250F8B005F753D /* Weapons */,
+				ED26758720250FB9005F753D /* Team */,
+				ED5FDB9A202B4E500078751F /* Tools */,
 			);
 			path = "Projet 3";
 			sourceTree = "<group>";
@@ -96,11 +106,12 @@
 		ED26758520250F74005F753D /* Heroes */ = {
 			isa = PBXGroup;
 			children = (
-				ED26758820250FD0005F753D /* Heroes.swift */,
+				ED26758820250FD0005F753D /* Hero.swift */,
 				ED26758A20250FE2005F753D /* Warrior.swift */,
 				ED26758C20250FF0005F753D /* Wizard.swift */,
 				ED26758E20251003005F753D /* Dwarf.swift */,
 				ED2675902025100F005F753D /* Colossus.swift */,
+				ED20CBE12040A941005957C8 /* ChuckNorris.swift */,
 			);
 			path = Heroes;
 			sourceTree = "<group>";
@@ -109,10 +120,13 @@
 			isa = PBXGroup;
 			children = (
 				ED26759C2025112E005F753D /* Weapons.swift */,
+				ED319DA42049B61D00CE0821 /* TheKickAss.swift */,
+				ED319DA62049B68800CE0821 /* TheKissItBetter.swift */,
 				ED26759220251078005F753D /* Club.swift */,
 				ED267594202510AE005F753D /* Hansaplast.swift */,
 				ED2675A020252000005F753D /* Axe.swift */,
 				ED26759820251107005F753D /* RubberChicken.swift */,
+				ED20CBE32040A98E005957C8 /* BitchSlap.swift */,
 			);
 			path = Weapons;
 			sourceTree = "<group>";
@@ -128,6 +142,7 @@
 		ED5FDB9A202B4E500078751F /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				ED5051DF2052C443001AD544 /* NameCheck.swift */,
 				ED5FDB9B202B4E6B0078751F /* Tools.swift */,
 			);
 			path = Tools;
@@ -191,19 +206,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED26758920250FD0005F753D /* Heroes.swift in Sources */,
+				ED20CBE22040A941005957C8 /* ChuckNorris.swift in Sources */,
+				ED26758920250FD0005F753D /* Hero.swift in Sources */,
 				ED26757D2024DED0005F753D /* main.swift in Sources */,
 				ED26759F20251149005F753D /* Team.swift in Sources */,
+				ED20CBE42040A98E005957C8 /* BitchSlap.swift in Sources */,
 				ED26758F20251003005F753D /* Dwarf.swift in Sources */,
 				ED26759920251107005F753D /* RubberChicken.swift in Sources */,
 				ED26759320251078005F753D /* Club.swift in Sources */,
 				ED2675912025100F005F753D /* Colossus.swift in Sources */,
 				ED267595202510AE005F753D /* Hansaplast.swift in Sources */,
+				ED5051E02052C443001AD544 /* NameCheck.swift in Sources */,
+				ED319DA52049B61D00CE0821 /* TheKickAss.swift in Sources */,
 				ED2675A120252000005F753D /* Axe.swift in Sources */,
 				ED26758B20250FE2005F753D /* Warrior.swift in Sources */,
 				ED26758D20250FF0005F753D /* Wizard.swift in Sources */,
 				ED5FDB9C202B4E6B0078751F /* Tools.swift in Sources */,
 				ED26759D2025112E005F753D /* Weapons.swift in Sources */,
+				ED319DA72049B68800CE0821 /* TheKissItBetter.swift in Sources */,
 				ED2675842024E0B0005F753D /* Game.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

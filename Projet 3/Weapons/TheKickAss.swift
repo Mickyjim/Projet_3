@@ -10,6 +10,7 @@
 import Foundation
 
 // Special weapon for the magic chest
+
 class TheKickAss: Weapons {
     init() {
         super.init(name: "TheKickAss", damage: 80, heal: 0)

@@ -10,20 +10,31 @@ import Foundation
 
 // The healer who is always high!
 
-class Wizard: Heroes {
+class Wizard: Hero {
     
     //MARK: -  init
     init(name: String) {
         super.init(name: name, energy: 125, weapon: Hansaplast())
     }
-    
-    override func attack(target: Heroes) {
-        print("I'm a lover not a fighter !")
+    // Disabling wizard's attack as main function is to heal
+    override func attack(target: Hero) {
+        print("I'm a lover not a fighter!")
     }
-    
-    func heal(target: Heroes) {
+    // Choosing and healing the target
+    func heal(target: Hero) {
         target.energy += weapon.heal
-        if target.energy <= 0 {
+        var energyGiven = weapon.heal
+        if target.maxEnergy - target.energy < weapon.heal {
+            energyGiven = target.maxEnergy - target.energy
+        }
+        print(name + " has healed " + target.name + " with \(energyGiven) points of energy 🚬🤪")
+        
+    // Enabling healing limit to avoid going over maximum energy
+        if target.energy > 0 {
+            if target.energy > target.maxEnergy {
+                target.energy = target.maxEnergy
+            }
+        } else {
             print("What?! You believe you are God?! He's dead!!! FYI it only happened once! And his name was Jesus! 🙄🙄🙄 ")
         }
     }
