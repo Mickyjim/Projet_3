@@ -14,6 +14,6 @@ class Warrior: Hero {
     
     //MARK: -  init
     init(name: String) {
-        super.init(name: name, energy: 100, weapon: Club())
+        super.init(name: name, energy: 100, weapon: Sword())
     }
 }

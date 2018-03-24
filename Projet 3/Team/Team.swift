@@ -11,10 +11,7 @@ import Foundation
 // Team creation
 class Team {
     var heroes = [Hero]()
-    
-    
-    
-    
+
     func createHeroes() {
         
         for _ in 0..<3 {

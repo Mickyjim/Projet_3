@@ -8,7 +8,7 @@
 
 import Foundation
 
-// Use of Singleton Pattern for name check to avoid use of name doubling
+// Use of Singleton Pattern for name check to avoid use of name repetition
 class NameCheck {
     static let shared = NameCheck()
     private init() {}
@@ -21,7 +21,7 @@ class NameCheck {
         repeat {
             heroName = Tools.inputString()
             if uniqueHeroNames.contains(heroName) {
-                print("That hero's name has already been used! Enter a new name")
+                print("That hero's name has already been used! Be more creative and find him a new name!🙄")
                 heroName = ""
             }
             uniqueHeroNames.append(heroName)

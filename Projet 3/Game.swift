@@ -18,9 +18,11 @@ class Game {
     func start() {
         
         print("")
-        print("==========================")
+        print("=======================================")
         print("☠️☠️☠️ WELCOME TO MORTAL KOMBAT ☠️☠️☠️")
-        print("=========================")
+        print("=======================================")
+        print("")
+        print("🥊 🥊 🥊 Let's RRRRRRRUMBLEEE!!! 🥊 🥊 🥊")
         print("")
         
         for i in 0..<2 {
@@ -44,29 +46,27 @@ class Game {
     func magicChest(hero: Hero) {
         let magicChestRandom = arc4random_uniform(5)
         if magicChestRandom == 3 {
-            print("Look! A magic chest 🎁! Cool!")
+            print("Look!😀 A magic chest 🎁! Cool!😁")
             if hero is Wizard {
                 let theKissItBetter = TheKissItBetter()
                 hero.weapon = theKissItBetter
-                print(hero.name + " is equiped with the Holy Graal 💉 🏥! Choose your teammate to heal")
+                print(hero.name + " is equiped with Advil 💊💊💊! Choose your teammate to heal")
             } else {
                 let theKickAss = TheKickAss()
                 hero.weapon = theKickAss
-                print(hero.name + " is equiped with a weapon sent from the Gods 🏓 and is up for some wopping! Who's your daddy now 😱! Choose your target")
+                print(hero.name + " is equiped with Excalibur 🗡 and is up for some wopping! Who's your daddy now 😱! Choose your target")
             }
         }
     }
     
-    // Chuck Norris appears!
+    // Bonus Chuck Norris appears in the game!
     func chuckNorris(target: Hero) {
         let chuckNorris = ChuckNorris(name: "Chuck Norris")
         chuckNorris.attack(target: target)
-        print("Your hero has just been BITCH SLAPED by Chuck Norris 👋🏻 💥 💩! That ugly!!! 😧 🤢 🔞")
+        print("Your hero has just been BITCH SLAPED by Chuck Norris 👋🏻 💥 💩! Uuuuh, that's ugly!!! Poor guy! 😧 🤢 🔞")
     }
     
     // MARK: Methods - User's hero choice
-
-    
     func userHeroChoice() -> Int {
         var userHero = 0
         repeat {
@@ -74,7 +74,7 @@ class Game {
         } while userHero != 1 && userHero != 2 && userHero != 3
         return userHero
     }
-    
+    // Attack phase
     func attackPhase(teamIndex: Int, contender: Hero) {
         teams[teamIndex].teamDescription()
         
@@ -93,15 +93,12 @@ class Game {
         //Select the player
         while true {
             for i in 0..<teams.count {
-                
-                
                 print("")
                 print("Team \(i+1) begin!")
                 print("")
                 teams[i].teamDescription()
                 
                 //MARK: Hero selection
-
                 let contender = teams[i].heroes[userHeroChoice() - 1]
                 magicChest(hero: contender)
                 
@@ -113,7 +110,6 @@ class Game {
                     
                     // If the hero is a wizard, list his team
                     teams[i].teamDescription()
-                    
                     
                     // Heal the target
                     wizard.heal(target: teams[i].heroes[userHeroChoice() - 1])

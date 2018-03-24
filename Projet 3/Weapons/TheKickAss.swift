@@ -9,7 +9,7 @@
 
 import Foundation
 
-// Special weapon for the magic chest
+// The ultimate weapon
 
 class TheKickAss: Weapons {
     init() {

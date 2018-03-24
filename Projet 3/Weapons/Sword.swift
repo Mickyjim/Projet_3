@@ -1,5 +1,5 @@
 //
-//  Axe.swift
+//  Club.swift
 //  Projet 3
 //
 //  Created by Michael Favre on 02/02/2018.
@@ -8,10 +8,10 @@
 
 import Foundation
 
-// Atchoum's favorite weapon
+// The perfect weapon for a messy outcome!
 
-class Axe: Weapons {
+class Sword: Weapons {
     init() {
-        super.init(name: "Axe", damage: 50, heal: 0)
+        super.init(name: "Sword", damage: 10, heal: 0)
     }
 }

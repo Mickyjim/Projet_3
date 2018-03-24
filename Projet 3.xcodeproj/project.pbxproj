@@ -16,12 +16,12 @@
 		ED26758D20250FF0005F753D /* Wizard.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED26758C20250FF0005F753D /* Wizard.swift */; };
 		ED26758F20251003005F753D /* Dwarf.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED26758E20251003005F753D /* Dwarf.swift */; };
 		ED2675912025100F005F753D /* Colossus.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2675902025100F005F753D /* Colossus.swift */; };
-		ED26759320251078005F753D /* Club.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED26759220251078005F753D /* Club.swift */; };
+		ED26759320251078005F753D /* Sword.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED26759220251078005F753D /* Sword.swift */; };
 		ED267595202510AE005F753D /* Hansaplast.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED267594202510AE005F753D /* Hansaplast.swift */; };
 		ED26759920251107005F753D /* RubberChicken.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED26759820251107005F753D /* RubberChicken.swift */; };
 		ED26759D2025112E005F753D /* Weapons.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED26759C2025112E005F753D /* Weapons.swift */; };
 		ED26759F20251149005F753D /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED26759E20251149005F753D /* Team.swift */; };
-		ED2675A120252000005F753D /* Axe.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2675A020252000005F753D /* Axe.swift */; };
+		ED2675A120252000005F753D /* Club.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2675A020252000005F753D /* Club.swift */; };
 		ED319DA52049B61D00CE0821 /* TheKickAss.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED319DA42049B61D00CE0821 /* TheKickAss.swift */; };
 		ED319DA72049B68800CE0821 /* TheKissItBetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED319DA62049B68800CE0821 /* TheKissItBetter.swift */; };
 		ED5051E02052C443001AD544 /* NameCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5051DF2052C443001AD544 /* NameCheck.swift */; };
@@ -51,12 +51,12 @@
 		ED26758C20250FF0005F753D /* Wizard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wizard.swift; sourceTree = "<group>"; };
 		ED26758E20251003005F753D /* Dwarf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dwarf.swift; sourceTree = "<group>"; };
 		ED2675902025100F005F753D /* Colossus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colossus.swift; sourceTree = "<group>"; };
-		ED26759220251078005F753D /* Club.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Club.swift; sourceTree = "<group>"; };
+		ED26759220251078005F753D /* Sword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sword.swift; sourceTree = "<group>"; };
 		ED267594202510AE005F753D /* Hansaplast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hansaplast.swift; sourceTree = "<group>"; };
 		ED26759820251107005F753D /* RubberChicken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RubberChicken.swift; sourceTree = "<group>"; };
 		ED26759C2025112E005F753D /* Weapons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weapons.swift; sourceTree = "<group>"; };
 		ED26759E20251149005F753D /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
-		ED2675A020252000005F753D /* Axe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Axe.swift; sourceTree = "<group>"; };
+		ED2675A020252000005F753D /* Club.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Club.swift; sourceTree = "<group>"; };
 		ED319DA42049B61D00CE0821 /* TheKickAss.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheKickAss.swift; sourceTree = "<group>"; };
 		ED319DA62049B68800CE0821 /* TheKissItBetter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheKissItBetter.swift; sourceTree = "<group>"; };
 		ED5051DF2052C443001AD544 /* NameCheck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameCheck.swift; sourceTree = "<group>"; };
@@ -122,9 +122,9 @@
 				ED26759C2025112E005F753D /* Weapons.swift */,
 				ED319DA42049B61D00CE0821 /* TheKickAss.swift */,
 				ED319DA62049B68800CE0821 /* TheKissItBetter.swift */,
-				ED26759220251078005F753D /* Club.swift */,
+				ED26759220251078005F753D /* Sword.swift */,
 				ED267594202510AE005F753D /* Hansaplast.swift */,
-				ED2675A020252000005F753D /* Axe.swift */,
+				ED2675A020252000005F753D /* Club.swift */,
 				ED26759820251107005F753D /* RubberChicken.swift */,
 				ED20CBE32040A98E005957C8 /* BitchSlap.swift */,
 			);
@@ -213,12 +213,12 @@
 				ED20CBE42040A98E005957C8 /* BitchSlap.swift in Sources */,
 				ED26758F20251003005F753D /* Dwarf.swift in Sources */,
 				ED26759920251107005F753D /* RubberChicken.swift in Sources */,
-				ED26759320251078005F753D /* Club.swift in Sources */,
+				ED26759320251078005F753D /* Sword.swift in Sources */,
 				ED2675912025100F005F753D /* Colossus.swift in Sources */,
 				ED267595202510AE005F753D /* Hansaplast.swift in Sources */,
 				ED5051E02052C443001AD544 /* NameCheck.swift in Sources */,
 				ED319DA52049B61D00CE0821 /* TheKickAss.swift in Sources */,
-				ED2675A120252000005F753D /* Axe.swift in Sources */,
+				ED2675A120252000005F753D /* Club.swift in Sources */,
 				ED26758B20250FE2005F753D /* Warrior.swift in Sources */,
 				ED26758D20250FF0005F753D /* Wizard.swift in Sources */,
 				ED5FDB9C202B4E6B0078751F /* Tools.swift in Sources */,
