@@ -31,11 +31,15 @@ class Hero {
     
     //MARK: - Methods - Damage inflicting and lost of energy
     func attack(target: Hero) {
-        target.energy -= weapon.damage
-        print(name + " attacked " + target.name + " and inflicting \(weapon.damage) points of damage! 👊🏻💥😵")
-    // Enabling damage limit to avoid going under minimum energy level
-        if target.energy < 0 {
-            target.energy = 0
+        if energy > 0 {
+            target.energy -= weapon.damage
+            print(name + " attacked " + target.name + " and inflicting \(weapon.damage) points of damage! 👊🏻💥😵")
+            // Enabling damage limit to avoid going under minimum energy level
+            if target.energy < 0 {
+                target.energy = 0
+            }
+        } else {
+            print("I can't! Let me rest in peace!")
         }
     }
 }

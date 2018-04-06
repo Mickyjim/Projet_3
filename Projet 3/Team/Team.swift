@@ -29,8 +29,11 @@ class Team {
             
             // User's choice of hero
             repeat {
-                userChoice = Tools.inputInt()
-                
+                if let data = readLine() {
+                    if let dataToInt = Int(data) {
+                        userChoice = dataToInt
+                    }
+                }
             } while userChoice != 1 && userChoice != 2 && userChoice != 3 && userChoice != 4
             
             // User's choice of hero name

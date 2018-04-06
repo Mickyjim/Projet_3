@@ -19,12 +19,15 @@ class NameCheck {
         var heroName = ""
         
         repeat {
-            heroName = Tools.inputString()
-            if uniqueHeroNames.contains(heroName) {
-                print("That hero's name has already been used! Be more creative and find him a new name!🙄")
-                heroName = ""
+            if let data = readLine() {
+                heroName = data
+                if uniqueHeroNames.contains(heroName) {
+                    print("That hero's name has already been used! Be more creative and find him a new name!🙄")
+                    heroName = ""
+                } else {
+                    uniqueHeroNames.append(heroName)
+                }
             }
-            uniqueHeroNames.append(heroName)
             
         } while heroName == ""
         

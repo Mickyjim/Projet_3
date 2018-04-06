@@ -12,7 +12,7 @@ import Foundation
 class Game {
     
     //MARK: - Vars
-    var teams = [Team]()
+   private var teams = [Team]()
     
     //MARK: - Methods
     func start() {
@@ -36,14 +36,14 @@ class Game {
     }
     
     // Welcome interface
-    func createTeam() -> Team {
+    private func createTeam() -> Team {
         let team = Team()
         team.createHeroes()
         return team
     }
     
     // The Magic chest feature
-    func magicChest(hero: Hero) {
+    private func magicChest(hero: Hero) {
         let magicChestRandom = arc4random_uniform(5)
         if magicChestRandom == 3 {
             print("Look!😀 A magic chest 🎁! Cool!😁")
@@ -60,22 +60,26 @@ class Game {
     }
     
     // Bonus Chuck Norris appears in the game!
-    func chuckNorris(target: Hero) {
+    private func chuckNorris(target: Hero) {
         let chuckNorris = ChuckNorris(name: "Chuck Norris")
         chuckNorris.attack(target: target)
         print("Your hero has just been BITCH SLAPED by Chuck Norris 👋🏻 💥 💩! Uuuuh, that's ugly!!! Poor guy! 😧 🤢 🔞")
     }
     
     // MARK: Methods - User's hero choice
-    func userHeroChoice() -> Int {
+    private func userHeroChoice() -> Int {
         var userHero = 0
         repeat {
-            userHero = Tools.inputInt()
+            if let data = readLine() {
+                if let dataToInt = Int(data) {
+                    userHero = dataToInt
+                }
+            }
         } while userHero != 1 && userHero != 2 && userHero != 3
         return userHero
     }
-    // Attack phase
-    func attackPhase(teamIndex: Int, contender: Hero) {
+    // Attack phase in combat
+    private func attackPhase(teamIndex: Int, contender: Hero) {
         teams[teamIndex].teamDescription()
         
         // Enabling bonus
@@ -87,7 +91,7 @@ class Game {
     }
     
     //MARK: - Methods
-    func fight() {
+   private func fight() {
         //Announce the playing team
         //List the playing team
         //Select the player

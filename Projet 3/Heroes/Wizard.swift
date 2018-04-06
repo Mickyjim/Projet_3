@@ -22,15 +22,15 @@ class Wizard: Hero {
     }
     // Choosing and healing the target
     func heal(target: Hero) {
-        target.energy += weapon.heal
-        var energyGiven = weapon.heal
-        if target.maxEnergy - target.energy < weapon.heal {
-            energyGiven = target.maxEnergy - target.energy
-        }
-        print(name + " has healed " + target.name + " with \(energyGiven) points of energy 🚬🤪")
-        
-    // Enabling healing limit to avoid going over maximum energy
         if target.energy > 0 {
+            target.energy += weapon.heal
+            var energyGiven = weapon.heal
+            if target.maxEnergy - target.energy < weapon.heal {
+                energyGiven = target.maxEnergy - target.energy
+            }
+            print(name + " has healed " + target.name + " with \(energyGiven) points of energy 🚬🤪")
+            
+            // Enabling healing limit to avoid going over maximum energy
             if target.energy > target.maxEnergy {
                 target.energy = target.maxEnergy
             }

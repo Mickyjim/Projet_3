@@ -25,7 +25,6 @@
 		ED319DA52049B61D00CE0821 /* TheKickAss.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED319DA42049B61D00CE0821 /* TheKickAss.swift */; };
 		ED319DA72049B68800CE0821 /* TheKissItBetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED319DA62049B68800CE0821 /* TheKissItBetter.swift */; };
 		ED5051E02052C443001AD544 /* NameCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5051DF2052C443001AD544 /* NameCheck.swift */; };
-		ED5FDB9C202B4E6B0078751F /* Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5FDB9B202B4E6B0078751F /* Tools.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -60,7 +59,6 @@
 		ED319DA42049B61D00CE0821 /* TheKickAss.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheKickAss.swift; sourceTree = "<group>"; };
 		ED319DA62049B68800CE0821 /* TheKissItBetter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheKissItBetter.swift; sourceTree = "<group>"; };
 		ED5051DF2052C443001AD544 /* NameCheck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameCheck.swift; sourceTree = "<group>"; };
-		ED5FDB9B202B4E6B0078751F /* Tools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tools.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,7 +141,6 @@
 			isa = PBXGroup;
 			children = (
 				ED5051DF2052C443001AD544 /* NameCheck.swift */,
-				ED5FDB9B202B4E6B0078751F /* Tools.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -175,7 +172,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0910;
-				LastUpgradeCheck = 0910;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Michael Favre";
 				TargetAttributes = {
 					ED2675782024DED0005F753D = {
@@ -221,7 +218,6 @@
 				ED2675A120252000005F753D /* Club.swift in Sources */,
 				ED26758B20250FE2005F753D /* Warrior.swift in Sources */,
 				ED26758D20250FF0005F753D /* Wizard.swift in Sources */,
-				ED5FDB9C202B4E6B0078751F /* Tools.swift in Sources */,
 				ED26759D2025112E005F753D /* Weapons.swift in Sources */,
 				ED319DA72049B68800CE0821 /* TheKissItBetter.swift in Sources */,
 				ED2675842024E0B0005F753D /* Game.swift in Sources */,
@@ -245,6 +241,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -252,6 +249,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -302,6 +300,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -309,6 +308,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
